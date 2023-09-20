@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width" />
   </head>
   <body>
-    <script src="https://">
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"> </script>
 
-
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-
-    <main>
-      <h1>Home page</h1>
-    </main>
-    
+    <script>
+    async function main() {
+      awit liff.init({ liffId: "" })
+      awit liff.shareTargetPicker ([
+        {  
+        type: "flex",
+        altText: "ทายบอลกับยูฟ่ามีสิทธิ์รับเงินแสนทุกวัน",
+        contents: ""
+        }
+      ])
+      liff.CloseWindow()
+    }
+    main()
   </body>
 </html>
